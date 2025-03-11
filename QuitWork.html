@@ -54,9 +54,7 @@
 
       btn1.addEventListener("click", () => {
         alert("您真是好老闆!");
-        setTimeout(()=>{
-            
-        },3000)
+        window.location.href = "./QuitWork2.html";
       });
       btn2.addEventListener("click", () => {
         let result = confirm("您剛剛真的按了拒絕嗎?");
@@ -64,10 +62,10 @@
           let result2 = confirm("你還真的忍心?");
           if (result2) {
             let result3 = confirm("你確定不再想一下嗎?");
-            if(result3){
-                alert("唉呀! 系統出問題惹~ 我們重新來一遍~")
-            }else{
-                alert("呼! 嚇死我了!我還以為您是惡魔~")
+            if (result3) {
+              alert("唉呀! 系統出問題惹~ 我們重新來一遍~");
+            } else {
+              alert("呼! 嚇死我了!我還以為您是惡魔~");
             }
           } else {
             alert("您果然還是有良心的!");
